@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 import numpy as np
 
 # loading the saved model
-multiple_disease_pred_model = pickle.load(open('C:/Users/Alive/Documents/KongData/KU CPE/Year 4 Semester 2/01219362-60 Machine Learning/Term Project/App/RF_model.sav', 'rb'))
+multiple_disease_pred_model = pickle.load(open('RF_model.sav', 'rb'))
 
 # sidebar for navigate
 
