@@ -72,7 +72,7 @@ if (selected == '3 Diseases Prediction'):
 
     # Convert inputs to float, ensuring all strings are valid numbers
     try:
-        b = [float(i) if i is not '' else None for i in a]
+        b = [float(i) if i != '' else None for i in a]
     except ValueError as e:
         st.error(f"Invalid input: {e}")
 
