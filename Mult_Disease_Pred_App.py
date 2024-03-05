@@ -8,7 +8,6 @@ import numpy as np
 multiple_disease_pred_model = pickle.load(open('RF_model.sav', 'rb'))
 
 # sidebar for navigate
-
 with st.sidebar:
     selected = option_menu('Multiple Diseases Prediction System', ['3 Diseases Prediction'], default_index=0)
 
@@ -103,3 +102,9 @@ if (selected == '3 Diseases Prediction'):
 
     else:
         st.error("Please fill out all the fields before proceeding.")
+
+# Footer
+st.write('---')  # Draw a line to separate the footer
+st.markdown("""
+    &copy; 2024 Kittipak Wibulsthien (6310505688) - Machine Learning Term Project. All Rights Reserved.
+    """, unsafe_allow_html=True)
